@@ -11,6 +11,8 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
   require('time-grunt')(grunt);
 
+  grunt.loadNpmTasks('grunt-contrib-jade');
+
   grunt.initConfig({
     yeoman: {
       // configurable paths
@@ -293,6 +295,21 @@ module.exports = function (grunt) {
           ]
         }
       }
+    },
+    jade: {
+        compile: {
+            options: {
+                client: false,
+                pretty: true
+            },
+            files: [ {
+              cwd: "app/views",
+              src: "*.jade",
+              dest: "app/views/",
+              expand: true,
+              ext: ".html"
+            } ]
+        }
     }
   });
 
