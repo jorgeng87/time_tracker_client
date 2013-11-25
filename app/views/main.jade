@@ -1,0 +1,32 @@
+nav.effeckt-off-screen-nav#effeckt-off-screen-nav(ng-class="{'effeckt-off-screen-nav-left-push': reveal, 'effeckt-off-screen-nav-show': navshow}")
+  h4 
+    Navigation
+    a.effeckt-off-screen-nav-close#effeckt-off-screen-nav-close(href="#0") ×
+  ul
+    li
+      a(href="#0") This
+    li
+      a(href="#0") Little
+    li
+      a(href="#0") Piggy
+    li
+      a(href="#0") Went
+    li
+      a(href="#0") To
+    li
+      a(href="#0") Market
+
+.page-wrap#page-wrap
+  .topcoat-navigation-bar
+    .topcoat-navigation-bar__item.center.full
+      h1.topcoat-navigation-bar__title Time Tracker
+  .topcoat-list
+    .ul.topcoat-list__container
+      .li.topcoat-list__item
+        Item
+      .li.topcoat-list__item
+        Item
+      .li.topcoat-list__item
+        Item
+  .jumbotron
+    button.off-screen-nav-button(data-effeckt-type="effeckt-off-screen-nav", ng-click="showNav()") Left Push
