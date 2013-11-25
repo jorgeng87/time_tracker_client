@@ -304,8 +304,8 @@ module.exports = function (grunt) {
             },
             files: [ {
               cwd: "app/views",
-              src: "*.jade",
-              dest: "app/views/",
+              src: "**/*.jade",
+              dest: "dist",
               expand: true,
               ext: ".html"
             } ]
